@@ -4,3 +4,20 @@ org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "--h2 is 
 --first, drop your tables (to reset your database for testing)
 --then create your tables
 afdbfdb [42001-214]
+2023-03-09 16:52:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACCOUNT" already exists; SQL statement:
+
+
+create table account (
+    account_id int primary key auto_increment,
+    username varchar(255) unique,
+    password varchar(255) [42101-214]
+2023-03-09 16:52:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MOVIE" not found; SQL statement:
+SELECT * FROM movie [42102-214]
+2023-03-09 16:53:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MOVIE" not found; SQL statement:
+INSERT INTO movie (movie_name, genre, rating, posted_by) VALUES (?,?,?,?) [42102-214]
+2023-03-09 16:54:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MOVIE" not found; SQL statement:
+INSERT INTO movie (movie_name, genre, rating, posted_by) VALUES (?,?,?,?) [42102-214]

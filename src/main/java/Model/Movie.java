@@ -39,11 +39,11 @@ public class Movie {
 
     //Properly named getters and setters are necessary for Jackson ObjectMapper to work. You may use them as well.
     //     * @return movie_id
-    public int getMovie_Id() {
+    public int getMovie_id() {
         return movie_id;
     }
 
-    public void setMovie_Id(int movie_id) {
+    public void setMovie_id(int movie_id) {
         this.movie_id = movie_id;
     }
 
